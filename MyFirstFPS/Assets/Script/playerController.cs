@@ -18,6 +18,8 @@ public class playerController : MonoBehaviour
 
     [SerializeField]
     private float gravity = -9.8f;
+    [SerializeField]
+    private float groundedDistance;
 
     private CharacterController characterController;
 
@@ -53,7 +55,7 @@ public class playerController : MonoBehaviour
             velocity.y = 0f;
         }
         velocity.y += gravity * Time.deltaTime;
-        if (Input.GetButtonDown("Jump") && characterController.isGrounded == true)
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             velocity.y += Mathf.Sqrt(jumpHeight * -2f * gravity);
             
@@ -73,8 +75,15 @@ public class playerController : MonoBehaviour
         isCrouch = !isCrouch;
     }
 
-    void Jump()
+    private bool IsGrounded()
     {
+        Vector3 castPoint = transform.position + characterController.center;
+        
+        if (Physics.SphereCast(castPoint, characterController.radius,transform.TransformDirection(Vector3.down), out RaycastHit hit, groundedDistance))
+        {
+            return true;
+        }
+        return false;
         
     }
 

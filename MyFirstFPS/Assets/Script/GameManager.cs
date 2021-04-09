@@ -6,9 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }
 
-
     [SerializeField]
-    Text bulletsCountText;
+    TextMesh text3D;
+    
     private void Awake()
     {
 
@@ -26,6 +26,6 @@ public class GameManager : MonoBehaviour
 
     public void RefreshBulletUI(int currentBullets, int maxBullets)
     {
-        bulletsCountText.text = currentBullets + "/" + maxBullets;
+        text3D.text = currentBullets + "/" + maxBullets;
     }
 }

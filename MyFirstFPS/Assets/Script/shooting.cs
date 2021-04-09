@@ -1,5 +1,4 @@
 using UnityEngine;
-using Cinemachine;
 public class shooting : MonoBehaviour
 {
     public float damage = 10f;

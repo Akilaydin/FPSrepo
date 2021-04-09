@@ -5,10 +5,12 @@ using UnityEngine;
 public class Weapon : MonoBehaviour //In order to store bullets and parameters that individual for every particular weapon.
 {
     [SerializeField]
-    private int maxBulletsCount = 30; 
+    private AmmoType weaponAmmoType;
+    public int maxBulletsCount = 30; 
     [SerializeField]
     private int bulletsPerShot = 1;
-    private int currentBulletsCount;
+    public int currentBulletsCount;
+    
 
     private void Start() {
         currentBulletsCount = maxBulletsCount;
@@ -29,9 +31,18 @@ public class Weapon : MonoBehaviour //In order to store bullets and parameters t
         return false;
     }
 
-    public void RefilAmmo()
+    public bool CheckAmmoType(AmmoType ammoType)
     {
-        currentBulletsCount = maxBulletsCount;
+        if (weaponAmmoType == ammoType)
+        {
+            return true;
+        }
+        return false;
+    }
+    public void RefilAmmo(int pickUpAmmoAmount)
+    {
+        currentBulletsCount += pickUpAmmoAmount;
+        currentBulletsCount = Mathf.Clamp(currentBulletsCount, 0, maxBulletsCount);
         GameManager.instance.RefreshBulletUI(currentBulletsCount, maxBulletsCount);
     }
 }

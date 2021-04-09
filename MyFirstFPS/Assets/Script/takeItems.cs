@@ -10,7 +10,7 @@ public class takeItems : MonoBehaviour
     [SerializeField]
     private float throwForce = 10;
     [SerializeField]
-    private Weapon weapon;
+    private Weapon weaponRifle;
 
 
 
@@ -38,8 +38,25 @@ public class takeItems : MonoBehaviour
                     }
                     else if (raycastHit.transform.tag.Contains("ammo"))
                     {
-                        weapon.RefilAmmo();
-                        Destroy(raycastHit.transform.gameObject);
+                        var ammoBox = raycastHit.transform.gameObject.GetComponent<AmmoBox>();
+                        int lackBullets = weaponRifle.maxBulletsCount - weaponRifle.currentBulletsCount;
+
+                        if (lackBullets <= 0) 
+                        {
+                            Debug.Log("Магазин заполнен");
+                            return;
+                        }
+
+                        if (weaponRifle.CheckAmmoType(ammoBox.boxAmmoType))
+                        {
+                            int bulletsToRefill = ammoBox.TakeBullets(lackBullets);
+                            weaponRifle.RefilAmmo(bulletsToRefill);
+                        }
+                        else
+                        {
+                            Debug.Log("Неподходящий тип патронов");
+                        }
+                        
                     }
                 }
             }
