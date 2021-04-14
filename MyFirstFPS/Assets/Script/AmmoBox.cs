@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class AmmoBox : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject RifleModel;
+    [SerializeField]
+    private GameObject pistolModel;
     public AmmoType boxAmmoType;
     [SerializeField]
     private int boxInitialBulletsCount;
     private int boxCurrentBulletsCount;
+    private TextMesh bulletsText;
+
 
     private void Start()
     {
         boxCurrentBulletsCount = boxInitialBulletsCount;
+        bulletsText = GetComponentInChildren<TextMesh>();
+        
     }
 
     public int TakeBullets(int takeAmount)
@@ -20,15 +28,19 @@ public class AmmoBox : MonoBehaviour
         if ((boxCurrentBulletsCount - takeAmount) >= 0) //Если в ящике хватает патронов для пополнения на запрашиваемое количество
         {
             boxCurrentBulletsCount -= takeAmount;
+            RefreshBullets();
             
             return takeAmount;
         }
         else
         {
             DestroyAmmoBox();
-            Debug.Log("d");
             return boxCurrentBulletsCount;
         }
+    }
+    private void RefreshBullets()
+    {
+        bulletsText.text = boxCurrentBulletsCount + "/" + boxInitialBulletsCount;
     }
 
     private void DestroyAmmoBox()
