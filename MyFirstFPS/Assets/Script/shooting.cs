@@ -50,10 +50,13 @@ public class shooting : MonoBehaviour
             {
                 GameObject explosion = Instantiate(bigExplosion, hit.point, Quaternion.identity);
                 Destroy(explosion, 2f);
+                Destroy(hit.collider.gameObject);
+                hit.collider.GetComponent<Grenade>().MakeExplosion();
             }
             if (hit.collider.tag.Contains("enemy"))
             {
-                Debug.Log("Enemy is hitted");
+                var hittedEnemy = hit.collider.gameObject.GetComponent<Enemy>();
+                hittedEnemy.GetDamage((int)damage);
             }
         }
     }
