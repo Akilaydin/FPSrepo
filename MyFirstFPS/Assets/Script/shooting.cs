@@ -1,7 +1,8 @@
 using UnityEngine;
+using EmeraldAI;
 public class shooting : MonoBehaviour
 {
-    public float damage = 10f;
+    public int damage = 10;
     public float range = 100f;
     public Camera fpsCum;
     public ParticleSystem muzzleFlash;
@@ -53,11 +54,12 @@ public class shooting : MonoBehaviour
                 Destroy(hit.collider.gameObject);
                 hit.collider.GetComponent<Grenade>().MakeExplosion();
             }
-            if (hit.collider.tag.Contains("enemy"))
+            if (hit.collider.tag.Contains("AI"))
             {
-                var hittedEnemy = hit.collider.gameObject.GetComponent<Enemy>();
-                hittedEnemy.GetDamage((int)damage);
+                var hittedEnemy = hit.collider.gameObject.GetComponent<EmeraldAISystem>();
+                hittedEnemy.Damage(damage, EmeraldAISystem.TargetType.Player, transform);
             }
         }
+
     }
 }

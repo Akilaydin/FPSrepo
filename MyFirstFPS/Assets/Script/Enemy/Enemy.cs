@@ -1,23 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EmeraldAI;
 
-[RequireComponent(typeof(EnemyAI))]
-[RequireComponent(typeof(EnemyAnimationController))]
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private int enemyMaxHp = 100;
     private int enemyCurrentHP;
     private EnemyAI enemyAI;
     private EnemyAnimationController enemyAnimController;
+    private EmeraldAISystem emeraldAI;
     
     void Start()
     {
         enemyCurrentHP = enemyMaxHp;
         enemyAI = gameObject.GetComponent<EnemyAI>();
         enemyAnimController = gameObject.GetComponent<EnemyAnimationController>();
+        emeraldAI = GetComponent<EmeraldAISystem>();
+        //emeraldAI.Damage(100, EmeraldAISystem.TargetType.Player, transform, 400);
     }
 
+    public void TestFunctionAnimation()
+    {
+
+    }
     public void GetDamage(int damage)
     {
         Debug.Log("EnemyHP = " + enemyCurrentHP);

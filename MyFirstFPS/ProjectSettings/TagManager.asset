@@ -10,6 +10,7 @@ TagManager:
   - take target
   - enemy
   - ammo
+  - AI
   layers:
   - Default
   - TransparentFX
@@ -22,8 +23,8 @@ TagManager:
   - Lighting
   - Ground
   - Postprocessing
-  - 
-  - 
+  - PlayerLayer
+  - AIVisibility
   - 
   - 
   - 

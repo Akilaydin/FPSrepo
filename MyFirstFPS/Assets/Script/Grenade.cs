@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EmeraldAI;
+using EmeraldAI.Example;
 
 public class Grenade : MonoBehaviour
 {
@@ -13,14 +15,14 @@ public class Grenade : MonoBehaviour
     {
         foreach (var collider in GetExplosionColliders())
         {
-            if (collider.GetComponent<Enemy>())
+            if (collider.GetComponent<EmeraldAISystem>())
             {
-                collider.GetComponent<Enemy>().GetDamage(explosionDamage);
+                collider.GetComponent<EmeraldAISystem>().Damage(explosionDamage, EmeraldAISystem.TargetType.Player,transform);
             }
 
-            if (collider.GetComponent<Player>())
+            if (collider.GetComponent<EmeraldAIPlayerHealth>())
             {
-                collider.GetComponent<Player>().GetDamage(explosionDamage);
+                collider.GetComponent<EmeraldAIPlayerHealth>().DamagePlayer(explosionDamage);
             }
         }
         

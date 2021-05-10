@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void PlayerDeath()
+    public void PlayerDeath()
     {
         GameManager.instance.ShowDeathScreen();
     }
