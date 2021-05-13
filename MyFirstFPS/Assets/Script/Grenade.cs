@@ -10,9 +10,13 @@ public class Grenade : MonoBehaviour
     private int explosionDamage;
     [SerializeField]
     private float explosionRadius;
+    [SerializeField]
+    private GameObject bigExplosion;
 
     public void MakeExplosion()
     {
+        GameObject explosion = Instantiate(bigExplosion, transform.position, Quaternion.identity);
+        Destroy(explosion, 2f);
         foreach (var collider in GetExplosionColliders())
         {
             if (collider.GetComponent<EmeraldAISystem>())
@@ -24,7 +28,9 @@ public class Grenade : MonoBehaviour
             {
                 collider.GetComponent<EmeraldAIPlayerHealth>().DamagePlayer(explosionDamage);
             }
+
         }
+        Destroy(gameObject);
         
     }
 
@@ -33,5 +39,12 @@ public class Grenade : MonoBehaviour
         Collider[] explosionColliders;
         explosionColliders = Physics.OverlapSphere(transform.position, explosionRadius);
         return explosionColliders;
+    }
+
+    public IEnumerator MakeDelayedExplosion(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        MakeExplosion();
+
     }
 }

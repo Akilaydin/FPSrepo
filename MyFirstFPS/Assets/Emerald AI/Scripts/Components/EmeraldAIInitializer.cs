@@ -18,7 +18,7 @@ namespace EmeraldAI.Utility
             SetupAdditionalComponents();
             SetupOptimizationSettings();
             SetupHealthBar();
-            //SetupCombatText();
+            SetupCombatText();
             SetupAnimator();
             DisableRagdoll();          
             SetupAudio();
@@ -562,16 +562,16 @@ namespace EmeraldAI.Utility
 
         void SetupCombatText ()
         {
-            //if (EmeraldAISystem.CombatTextSystemObject == null)
-            //{
-            //    GameObject m_CombatTextSystem = Instantiate((GameObject)Resources.Load("Combat Text System") as GameObject, Vector3.zero, Quaternion.identity);
-            //    m_CombatTextSystem.name = "Combat Text System";
-            //    GameObject m_CombatTextCanvas = Instantiate((GameObject)Resources.Load("Combat Text Canvas") as GameObject, Vector3.zero, Quaternion.identity);
-            //    m_CombatTextCanvas.name = "Combat Text Canvas";
-            //    EmeraldAISystem.CombatTextSystemObject = m_CombatTextCanvas;
-            //    CombatTextSystem.Instance.CombatTextCanvas = m_CombatTextCanvas;
-            //    CombatTextSystem.Instance.Initialize();
-            //}
+            if (EmeraldAISystem.CombatTextSystemObject == null)
+            {
+                GameObject m_CombatTextSystem = Instantiate((GameObject)Resources.Load("Combat Text System") as GameObject, Vector3.zero, Quaternion.identity);
+                m_CombatTextSystem.name = "Combat Text System";
+                GameObject m_CombatTextCanvas = Instantiate((GameObject)Resources.Load("Combat Text Canvas") as GameObject, Vector3.zero, Quaternion.identity);
+                m_CombatTextCanvas.name = "Combat Text Canvas";
+                EmeraldAISystem.CombatTextSystemObject = m_CombatTextCanvas;
+                CombatTextSystem.Instance.CombatTextCanvas = m_CombatTextCanvas;
+                CombatTextSystem.Instance.Initialize();
+            }
         }
 
         void SetupEmeraldAISettings ()

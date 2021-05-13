@@ -904,6 +904,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -2411,6 +2417,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -3152,6 +3164,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -3517,6 +3535,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -5701,6 +5725,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -6226,6 +6256,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -7689,6 +7725,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -8560,6 +8602,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -9329,6 +9377,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -11259,6 +11313,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -11345,7 +11405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960395842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9528533, y: 5.41, z: -45.6}
+  m_LocalPosition: {x: 0.9528533, y: 0.6, z: -45.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 975299897}
@@ -11378,6 +11438,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -12356,6 +12422,7 @@ GameObject:
   - component: {fileID: 1065042898}
   - component: {fileID: 1065042897}
   - component: {fileID: 1065042896}
+  - component: {fileID: 1065042899}
   m_Layer: 0
   m_Name: Post-process Volume
   m_TagString: Untagged
@@ -12407,6 +12474,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1065042899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065042895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd3626effbae81459ee2d943515e3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: {fileID: 0}
 --- !u!1 &1072941920 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100030, guid: 2efacd88951b9ee419c648e9057bb527,
@@ -17605,12 +17685,12 @@ MonoBehaviour:
   CurrentDamageAmount: 5
   DamageAmountRun: 5
   WanderRadius: 25
-  TabNumber: 6
+  TabNumber: 1
   TemperamentTabNumber: 2
   DetectionTagsTabNumber: 1
-  AnimationTabNumber: 2
+  AnimationTabNumber: 1
   SoundTabNumber: 0
-  MovementTabNumber: 1
+  MovementTabNumber: 0
   WeaponTypeTabNumber: 0
   WeaponTypeCombatTabNumber: 0
   WeaponTypeControlTabNumber: 0
@@ -19465,6 +19545,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -19641,6 +19727,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -20163,6 +20255,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -20785,6 +20883,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -21508,8 +21612,6 @@ MonoBehaviour:
   muzzleFlash: {fileID: 1300630960}
   impactEffect: {fileID: 1136715849}
   fireRate: 10
-  bigExplosion: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
-    type: 3}
   weapon: {fileID: 168298510}
   recoil: {fileID: 168298509}
 --- !u!114 &1329358771
@@ -21538,6 +21640,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentHealth: 100
+  hpRegenerationRate: 1
+  hpRegenerationAmount: 1
   DamageEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -22324,6 +22428,7 @@ GameObject:
   - component: {fileID: 1415654955}
   - component: {fileID: 1415654956}
   - component: {fileID: 1415654957}
+  - component: {fileID: 1415654958}
   m_Layer: 11
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -22488,6 +22593,24 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1415654958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415654951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546db803cfad5a543b1ec1485a0f08a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadePrefab: {fileID: 5148545836393569575, guid: 3cbdf7ceae6d8ee44b42cf62195d2377,
+    type: 3}
+  throwCooldown: 1
+  throwForce: 1000
+  grenadeDestructionDelay: 3
+  nextTimeToThrow: 1
 --- !u!1001 &1416403768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22753,6 +22876,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -26138,6 +26267,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -27460,6 +27595,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -29160,6 +29301,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name
@@ -29278,6 +29425,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960395843}
     m_Modifications:
+    - target: {fileID: -1874644837759976525, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
+        type: 3}
+      propertyPath: bigExplosion
+      value: 
+      objectReference: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+        type: 3}
     - target: {fileID: 4943633846532900011, guid: 2dd9a8f3810f90943abbec0b2937ea7f,
         type: 3}
       propertyPath: m_Name

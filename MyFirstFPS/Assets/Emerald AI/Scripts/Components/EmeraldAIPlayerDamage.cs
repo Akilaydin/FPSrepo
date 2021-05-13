@@ -19,7 +19,7 @@ namespace EmeraldAI
             DamagePlayerStandard(DamageAmount);
 
             //Creates damage text on the player's position, if enabled.
-            CombatTextSystem.Instance.CreateCombatText(DamageAmount, transform.position, CriticalHit, false, true);
+            CombatTextSystem.Instance.CreateCombatText(DamageAmount, transform.forward * 3 + transform.position, CriticalHit, false, true);
 
             //Sends damage to another function that will then send the damage to the RFPS player.
             //If you are using RFPS, you can uncomment this to allow Emerald Agents to damage your RFPS player.

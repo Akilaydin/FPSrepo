@@ -1,8 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using EmeraldAI.CharacterController;
 
 namespace EmeraldAI.Example
 {
@@ -14,15 +12,24 @@ namespace EmeraldAI.Example
     public class EmeraldAIPlayerHealth : MonoBehaviour
     {
         public int CurrentHealth = 100; [Space]
+        [Header("HP REGENERATION")]
+        [SerializeField]
+        private float hpRegenerationRate;
+        [SerializeField]
+        private int hpRegenerationAmount;
+        [Header("EVENTS")]
         public UnityEvent DamageEvent;
         public UnityEvent DeathEvent;
 
         [HideInInspector]
         public int StartingHealth;
 
+
         private void Start()
         {
+            
             StartingHealth = CurrentHealth;
+            StartCoroutine(HpRegeneration());
         }
 
         public void DamagePlayer (int DamageAmount)
@@ -39,6 +46,23 @@ namespace EmeraldAI.Example
         public void PlayerDeath ()
         {
             DeathEvent.Invoke();
+        }
+
+        private IEnumerator HpRegeneration()
+        {
+            while (true)
+            {
+                if (CurrentHealth < StartingHealth / 2)
+                {
+                    CurrentHealth += hpRegenerationAmount;
+                    Debug.Log(CurrentHealth);
+                    yield return new WaitForSeconds(hpRegenerationRate);
+                }
+                else
+                {
+                    yield return null;
+                }
+            }
         }
     }
 }

@@ -531,7 +531,7 @@ namespace EmeraldAI
 
         public float WalkBackwardsSpeed = 1;
         public float WalkSpeed = 2;
-        public float RunSpeed = 5;
+        public float RunSpeed = 10;
         public int ExpandedFieldOfViewAngle = 300;
         public int fieldOfViewAngle = 180;
         public int fieldOfViewAngleRef;

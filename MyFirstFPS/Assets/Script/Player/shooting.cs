@@ -9,8 +9,7 @@ public class shooting : MonoBehaviour
     public GameObject impactEffect;
     public float fireRate = 15f;
     private float nextTimeToFire = 0f;
-    [SerializeField]
-    private GameObject bigExplosion;
+
     [SerializeField]
     private Weapon weapon;
     public New_Weapon_Recoil_Script recoil;
@@ -49,9 +48,6 @@ public class shooting : MonoBehaviour
 
             if (hit.collider.tag.Contains("target"))
             {
-                GameObject explosion = Instantiate(bigExplosion, hit.point, Quaternion.identity);
-                Destroy(explosion, 2f);
-                Destroy(hit.collider.gameObject);
                 hit.collider.GetComponent<Grenade>().MakeExplosion();
             }
             if (hit.collider.tag.Contains("AI"))
