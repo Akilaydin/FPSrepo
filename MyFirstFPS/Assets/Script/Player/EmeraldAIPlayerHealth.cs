@@ -43,7 +43,7 @@ namespace EmeraldAI.Example
             }
         }
 
-        public void PlayerDeath ()
+        public void PlayerDeath()
         {
             DeathEvent.Invoke();
         }
@@ -55,7 +55,6 @@ namespace EmeraldAI.Example
                 if (CurrentHealth < StartingHealth / 2)
                 {
                     CurrentHealth += hpRegenerationAmount;
-                    Debug.Log(CurrentHealth);
                     yield return new WaitForSeconds(hpRegenerationRate);
                 }
                 else

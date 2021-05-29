@@ -29,6 +29,6 @@ public class Player : MonoBehaviour
 
     public void PlayerDeath()
     {
-        GameManager.instance.ShowDeathScreen();
+        GameManager.instance.DeathOfPlayer();
     }
 }
