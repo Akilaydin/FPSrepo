@@ -1,6 +1,6 @@
 using UnityEngine;
 using EmeraldAI;
-public class shooting : MonoBehaviour
+public class Shooting : MonoBehaviour
 {
     public int damage = 10;
     public float range = 100f;

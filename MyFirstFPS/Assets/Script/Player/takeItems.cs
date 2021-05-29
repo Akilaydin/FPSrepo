@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class takeItems : MonoBehaviour
+public class TakeItems : MonoBehaviour
 {
     private Transform takebleObject;
     [SerializeField]
