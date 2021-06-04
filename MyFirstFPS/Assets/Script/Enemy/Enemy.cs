@@ -1,51 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using EmeraldAI;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private int enemyMaxHp = 100;
-    private int enemyCurrentHP;
-    private EnemyAI enemyAI;
-    private EnemyAnimationController enemyAnimController;
+    public int EnemyID;
+    public string EnemyName;
+
+
     private EmeraldAISystem emeraldAI;
-    
-    void Start()
+    public Enemy(int enemyID, string enemyName)
     {
-        enemyCurrentHP = enemyMaxHp;
-        enemyAI = gameObject.GetComponent<EnemyAI>();
-        enemyAnimController = gameObject.GetComponent<EnemyAnimationController>();
+        EnemyID = enemyID;
+        EnemyName = enemyName;
+    }
+    private void Start()
+    {
         emeraldAI = GetComponent<EmeraldAISystem>();
-        //emeraldAI.Damage(100, EmeraldAISystem.TargetType.Player, transform, 400);
+    }
+    public void GetDamage(int damage, EmeraldAISystem.TargetType type,Transform attackerTransform)
+    {
+        emeraldAI.Damage(damage, type, attackerTransform);
     }
 
-    public void TestFunctionAnimation()
+    public void Initialize(int enemyID, string enemyName)
     {
-
-    }
-    public void GetDamage(int damage)
-    {
-        Debug.Log("EnemyHP = " + enemyCurrentHP);
-        if ((enemyCurrentHP - damage) <= 0)
-        {
-            EnemyDestruction();
-            return;
-        }
-        else
-        {
-            enemyCurrentHP -= damage;
-        }
-
-    }
-
-    private void EnemyDestruction()
-    {
-        
-        enemyAnimController.SetDeathAnimation();
-        this.gameObject.GetComponent<Enemy>().enabled = false;
-        this.gameObject.GetComponent<EnemyAI>().enabled = false;
-        this.gameObject.GetComponent<Collider>().enabled = false;
-        Destroy(this.gameObject,5f);
+        EnemyID = enemyID;
+        EnemyName = enemyName;
     }
 }

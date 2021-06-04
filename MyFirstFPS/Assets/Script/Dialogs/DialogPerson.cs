@@ -39,15 +39,12 @@ public class DialogPerson : MonoBehaviour
 
     private void Chat()
     {
-        Debug.Log(dialogs.Length);
         Toggle(true);
 
         for (int i = 0; i < dialogs.Length; i++)
         {
-            Debug.Log("dd");
             if (!dialogs[i].isEnded)
             {
-                Debug.Log("ddddd");
                 StartCoroutine(BeginDialog(dialogs[i]));
                 return;
             }

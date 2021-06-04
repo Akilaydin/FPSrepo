@@ -19,9 +19,9 @@ public class Grenade : MonoBehaviour
         Destroy(explosion, 2f);
         foreach (var collider in GetExplosionColliders())
         {
-            if (collider.GetComponent<EmeraldAISystem>())
+            if (collider.GetComponent<Enemy>())
             {
-                collider.GetComponent<EmeraldAISystem>().Damage(explosionDamage, EmeraldAISystem.TargetType.Player,transform);
+                collider.GetComponent<Enemy>().GetDamage(explosionDamage, EmeraldAISystem.TargetType.Player,transform);
             }
 
             if (collider.GetComponent<EmeraldAIPlayerHealth>())

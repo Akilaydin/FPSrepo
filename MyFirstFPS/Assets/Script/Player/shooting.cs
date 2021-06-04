@@ -52,8 +52,8 @@ public class Shooting : MonoBehaviour
             }
             if (hit.collider.tag.Contains("AI"))
             {
-                var hittedEnemy = hit.collider.gameObject.GetComponent<EmeraldAISystem>();
-                hittedEnemy.Damage(damage, EmeraldAISystem.TargetType.Player, transform);
+                var hittedEnemy = hit.collider.gameObject.GetComponent<Enemy>();
+                hittedEnemy.GetDamage(damage, EmeraldAISystem.TargetType.Player, transform);
             }
         }
 

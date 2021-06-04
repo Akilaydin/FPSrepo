@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private TextMesh text3D;
     [SerializeField]
     private EmeraldAIPlayerHealth playerHealth;
+    [HideInInspector]
 
     private GameObject player;
 
@@ -30,14 +31,12 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        playerHealth = player.GetComponent<EmeraldAIPlayerHealth>();
     }
-
     public void DeathOfPlayer()
     {
         Debug.Log("Lost");
         ShowDeathScreen();
-        Quest quest = new KillQuest("Name","Goal",100, QuestType.KillQuest);
-        //player.FailAllQuests();
     }
     private void ShowDeathScreen()
     {
@@ -53,8 +52,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log(playerHealth.CurrentHealth + "/" + playerHealth.StartingHealth);
     }
-
-
 
     #region ScoreAccessible
     public int GetTotalScore()

@@ -2583,9 +2583,11 @@ namespace EmeraldAI
         /// </summary>
         public float TargetAngle ()
         {
+            if (CurrentTarget == null) return 0;
             Vector3 Direction = new Vector3(CurrentTarget.position.x, 0, CurrentTarget.position.z) - new Vector3(transform.position.x, 0, transform.position.z);
 
             float angle = Vector3.Angle(transform.forward, Direction);
+            
             float RoationDifference = transform.localEulerAngles.x;
             RoationDifference = (RoationDifference > 180) ? RoationDifference - 360 : RoationDifference;
             float AdjustedAngle = Mathf.Abs(angle) - Mathf.Abs(RoationDifference);

@@ -8,4 +8,6 @@ public class Dialog : MonoBehaviour
     public bool isEnded = false;
     [TextArea]
     public string[] msg;
+
+    
 }
