@@ -41,7 +41,5 @@ public class GrenadeThrowing : MonoBehaviour
     {
         yield return new WaitForSeconds(grenadeDestructionDelay + 0.5f);
         Destroy(grenade);
-        
-
     }
 }
