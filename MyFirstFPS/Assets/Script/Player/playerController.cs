@@ -5,31 +5,44 @@ using UnityEngine;
 public class playerController : MonoBehaviour
 {
     [SerializeField]
-    private float playerSpeed=5;
+    private float playerSpeed = 10;
 
     [SerializeField]
-    private float turnerSpeed=5;
+    private float turnerSpeed = 5;
 
     [SerializeField]
-    private float sensetivity=-5;
+    private float sensetivity = -5;
 
     [SerializeField]
     private float jumpHeight = 3f;
+    [SerializeField]
+    private float verticalSpeed;
 
     [SerializeField]
     private float gravity = -9.8f;
-    [SerializeField]
-    private float groundedDistance;
 
     private CharacterController characterController;
 
     private Transform playerCamera;
 
-    private float cumRotation=0f;
+    private float cumRotation = 0f;
 
     private bool isCrouch = false;
+    [SerializeField]
+    private float timeForFlying = 15;
+    private float flyingTimer;
+    private bool canFly = true;
+    [SerializeField]
+    private float restingTime = 10;
+    private float isResting;
+
+
 
     private Vector3 velocity;
+    [SerializeField]
+    private float stassHeight;//длина луча идущего из ass
+
+
 
 
     void Start()
@@ -38,27 +51,58 @@ public class playerController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
     }
 
-    
+
     void Update()
     {
         Vector3 movement = transform.forward * Input.GetAxis("Vertical") + transform.right * Input.GetAxis("Horizontal");
-        if(movement.magnitude>1)
-        {
-            movement.Normalize();
-        }
-        if(Input.GetKeyDown(KeyCode.LeftControl))
-        {
-             Crouch();
-        }
-        if (characterController.isGrounded == true) 
+        if (movement.magnitude > 1)
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                Crouch();
+            }
+        if (characterController.isGrounded == true)
         {
             velocity.y = 0f;
+
         }
         velocity.y += gravity * Time.deltaTime;
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButton("Jump"))
+        {
+            if (canFly == true)
+            {
+                velocity.y += Mathf.Sqrt(verticalSpeed * -2f * gravity);
+
+            }
+
+        }
+        if (Input.GetButtonDown("Jump") && canFly == false)
         {
             velocity.y += Mathf.Sqrt(jumpHeight * -2f * gravity);
-            
+        }
+
+        if (canFly == false)
+        {
+            isResting += Time.deltaTime;
+            flyingTimer = 0;
+        }
+
+        if (flyingTimer >= timeForFlying)
+        {
+            canFly = false;
+        }
+
+        if (isResting > restingTime)
+        {
+            canFly = true;
+        }
+
+        if (characterController.isGrounded == false)
+        {
+            flyingTimer += Time.deltaTime;
+        }
+        if (canFly == true)
+        {
+            isResting = 0;
         }
 
         float sprint = Input.GetKey(KeyCode.LeftShift) && !isCrouch ? 2 : 1;
@@ -75,18 +119,19 @@ public class playerController : MonoBehaviour
         isCrouch = !isCrouch;
     }
 
-    private bool IsGrounded()
+    bool IsGrounded()
     {
-        Vector3 castPoint = transform.position + characterController.center;
-        
-        if (Physics.SphereCast(castPoint, characterController.radius,transform.TransformDirection(Vector3.down), out RaycastHit hit, groundedDistance))
+        Vector3 stassPosition = transform.position + characterController.center;
+        if (Physics.SphereCast(stassPosition, characterController.radius, transform.TransformDirection(Vector3.down), out RaycastHit stass, stassHeight))
         {
             return true;
         }
         return false;
-        
+
     }
 
-    
-        
+
+
+
+
 }
