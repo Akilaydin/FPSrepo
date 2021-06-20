@@ -348,7 +348,6 @@ namespace EmeraldAI
         {
             EmeraldComponent.IsDead = true;
             EmeraldComponent.DeathEvent.Invoke();
-            QuestSystem.instance.FulfillQuests(gameObject.GetComponent<Enemy>().EnemyID, 1);
 
             //If our AI has a summoner, remove self from their TotalSummonedAI.
             if (EmeraldComponent.CurrentSummoner != null)

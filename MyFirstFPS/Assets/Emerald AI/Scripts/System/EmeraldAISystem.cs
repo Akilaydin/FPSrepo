@@ -1025,8 +1025,14 @@ namespace EmeraldAI
 
                 AIAgentActive = m_NavMeshAgent.enabled;
                 AggroDelay += Time.deltaTime;
-
-                CurrentAnimationClip = AIAnimator.GetCurrentAnimatorClipInfo(0)[0].clip;
+                try
+                {
+                    CurrentAnimationClip = AIAnimator.GetCurrentAnimatorClipInfo(0)[0].clip;
+                }
+                catch
+                {
+                    return;
+                }
                 EmeraldBehaviorsComponent.CheckAnimationStates();
 
                 //If our AI is not in combat, wander according to its Wander Type.
@@ -2366,7 +2372,7 @@ namespace EmeraldAI
                 if (!AIAnimator.GetBool("Blocking") || AdjustedBlockAngle > MaxBlockAngle)
                 {
                     CurrentHealth -= DamageAmount;
-                    if (TypeOfTarget != TargetType.Player)
+                    if (TypeOfTarget == TargetType.Player)
                     {
                         if (CombatTextSystem.Instance.m_EmeraldAICombatTextData.CombatTextTargets != EmeraldAICombatTextData.CombatTextTargetEnum.PlayerOnly && !IsDead)
                         {
