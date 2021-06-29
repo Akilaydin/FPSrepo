@@ -20203,7 +20203,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1778153252}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1739959449 stripped
 Transform:
@@ -25491,12 +25491,42 @@ PrefabInstance:
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
       propertyPath: TabNumber
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
       propertyPath: CombatTabNumber
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: Death2Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 7125476a94c6e5e469988f05d3612828, type: 2}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: Attack2Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: f81155535b7f491488427196acd34950, type: 2}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: Attack3Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: ec414c93e2fb2394c921ac1b9af323c7, type: 2}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: Attack4Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 701b12ea082ae7d46aa383d61d484bc8, type: 2}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: Attack5Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: e6c3a841e1bf4d64bba02f55416d1007, type: 2}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: AnimationTabNumber
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
@@ -25505,24 +25535,114 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
+      propertyPath: MeleeAttackPickType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
       propertyPath: TemperamentTabNumber
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: TotalDeathAnimations
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
       propertyPath: AnimationListsChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
       propertyPath: TotalAttackAnimations
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: DeathAnimationList.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
       propertyPath: AttackAnimationList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[1].MaxDamage
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[1].MinDamage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[2].MaxDamage
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[2].MinDamage
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[3].MaxDamage
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[3].MinDamage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[0].AttackOdds
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[1].AttackOdds
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[2].AttackOdds
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[3].AttackOdds
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[1].AttackAnimaition
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[2].AttackAnimaition
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: MeleeAttacks.Array.data[3].AttackAnimaition
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: DeathAnimationList.Array.data[1].AnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 7125476a94c6e5e469988f05d3612828, type: 2}
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
       propertyPath: AttackAnimationList.Array.data[1].AnimationClip
@@ -25530,7 +25650,42 @@ PrefabInstance:
       objectReference: {fileID: 7400000, guid: f81155535b7f491488427196acd34950, type: 2}
     - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
         type: 3}
+      propertyPath: AttackAnimationList.Array.data[2].AnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: ec414c93e2fb2394c921ac1b9af323c7, type: 2}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: AttackAnimationList.Array.data[3].AnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 701b12ea082ae7d46aa383d61d484bc8, type: 2}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: AttackAnimationList.Array.data[4].AnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: e6c3a841e1bf4d64bba02f55416d1007, type: 2}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: DeathAnimationList.Array.data[1].AnimationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
       propertyPath: AttackAnimationList.Array.data[1].AnimationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: AttackAnimationList.Array.data[2].AnimationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: AttackAnimationList.Array.data[3].AnimationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577476552182713561, guid: 7b76efbd67343384f85d4e607ad946dd,
+        type: 3}
+      propertyPath: AttackAnimationList.Array.data[4].AnimationSpeed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -26101,6 +26256,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659050792931849228, guid: 3fae79efb24773c48857f48a01e89e3b,
+        type: 3}
+      propertyPath: TemperamentTabNumber
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8659050792931849245, guid: 3fae79efb24773c48857f48a01e89e3b,
         type: 3}
